@@ -1,0 +1,79 @@
+.attractions {
+    height: 100vh;
+    padding: 50px 80px;
+    @media screen and (max-width: 1280px) {
+        height: auto;
+    }
+    @media screen and (max-width: 735px) {
+        padding: 30px;
+    }
+    .attractions__wrapper {
+        p {
+            text-transform: uppercase;
+            color: var(--yellow);
+            font-weight: 700;
+        }
+        h1 {
+            color: var(--darkblue);
+            margin-bottom: 30px;
+            font-size: 40px;
+            span {
+                color: var(--orange);
+            }
+        }
+        .attractions__cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 1028px) {
+                gap: 20px;
+            }
+            .card {
+                width: 220px;
+                height: 392.365px;
+                border-radius: 20px;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (max-width: 1028px) {
+                    width: 200px;
+                }
+                @media screen and (max-width: 735px) {
+                    width: 170px;
+                    height: 350px;
+                }
+                @media screen and (max-width: 430px) {
+                    width: 170px;
+                    height: 310px;
+                }
+                .card__bg {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    transition: all 0.3s ease-in-out;
+                    background-size: 50%;
+                    filter: brightness(0.9);
+                    &:hover {
+                        transform: scale(1.1);
+                        filter: brightness(0.5);
+                    }
+                }
+                .card__name {
+                    position: absolute;
+                    bottom: 20%;
+                    color: white;
+                    font-size: 18px;
+                    pointer-events: none;
+                    @media screen and (max-width: 1028px) {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

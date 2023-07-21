@@ -1,0 +1,99 @@
+.favorite {
+    height: 100vh;
+    padding: 50px 80px;
+    @media screen and (max-width: 1280px) {
+        height: auto;
+    }
+    @media screen and (max-width: 735px) {
+        padding: 30px;
+    }
+    .favorite__wrapper {
+        p:first-child {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--yellow);
+        }
+        h1 {
+            color: var(--darkblue);
+            margin-bottom: 30px;
+            font-size: 40px;
+            span {
+                color: var(--orange);
+            }
+            @media screen and (max-width: 1280px) {
+                font-size: 30px;
+            }
+        }
+        .favorite__cards {
+            .card__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                @media screen and (max-width: 1280px) {
+                    gap: 20px;
+                }
+                .card {
+                    width: 278.462px;
+                    height: 392.365px;
+                    padding: 10px;
+                    position: relative;
+                    border-radius: 24px;
+                    cursor: pointer;
+                    @media screen and (max-width: 1028px) {
+                        width: 310px;
+                    }
+                    @media screen and (max-width: 735px) {
+                        width: 250px;
+                    }
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
+                    }
+                    .card__texts {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        background: rgba(255, 255, 255, 0.8);
+                        padding: 20px;
+                        h3 {
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        .texts__wrapper {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        .loc {
+                            text-transform: capitalize;
+                            font-size: 12px;
+                            font-weight: 500;
+                        }
+                        .price {
+                            color: #181e4b;
+                            font-weight: 500;
+                            font-size: 11px;
+                        }
+                    }
+                }
+                .card1 {
+                    background: url('https://images.unsplash.com/photo-1588312578101-cacee14bb0ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+                    background-repeat: no-repeat;
+                }
+                .card2 {
+                    background: url('https://images.unsplash.com/photo-1524675053444-52c3ca294ad2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+                    background-repeat: no-repeat;
+                }
+                .card3 {
+                    background: url('https://images.unsplash.com/photo-1623692267429-45330c42bbd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80');
+                    background-repeat: no-repeat;
+                }
+                .card4 {
+                    background: url('https://images.unsplash.com/photo-1548430065-53c58a6582dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80');
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

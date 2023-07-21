@@ -1,0 +1,90 @@
+.navbar {
+    width: 100%;
+    padding: 15px 80px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    position: fixed;
+    @media screen and (max-width: 1028px) {
+        padding: 20px;
+    }
+    @media screen and (max-width: 500px) {
+        padding: 10px 20px;
+    }
+    .navbar__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .nav__logo {
+            font-size: 20px;
+            color: var(--darkblue);
+            font-weight: bold;
+            span {
+                color: var(--yellow);
+            }
+        }
+        .nav__menu {
+            @media screen and (max-width: 499) {
+                // display: none;
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                li {
+                    font-weight: 600;
+                    color: var(--darkblue);
+                    font-size: 14px;
+                    padding: 8px 20px;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    transition: 0.1s all;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    &:hover {
+                        background: var(--yellow);
+                        color: rgb(235, 235, 235);
+                    }
+                }
+            }
+        }
+        .nav__menu-mobile {
+            position: relative;
+            .menuIcon {
+                font-size: 30px;
+                cursor: pointer;
+                @media screen and (max-width: 1280px) {
+                    font-size: 26px;
+                }
+            }
+            .menu__mobile {
+                position: absolute;
+                align-items: start;
+                flex-direction: column;
+                gap: 15px;
+                right: 0;
+                background-color: var(--darkblue);
+                padding: 20px;
+                border-radius: 10px;
+                @media screen and (max-width: 1280px) {
+                    padding: 20px 10px;
+                    gap: 10px;
+                }
+                li {
+                    color: white;
+                    font-size: 16px;
+                    @media screen and (max-width: 1280px) {
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        background-color: var(--orange);
+                    }
+                }
+            }
+        }
+        .hidden {
+            display: none;
+        }
+    }
+}
